@@ -1,11 +1,14 @@
-import PlayerCard  from "@/components/PlayerCard";  
+import Leaderboard from "@/components/Leaderboard"
+import Navbar  from "@/components/Navbar"
 
 export default function Home() {
 
   return(
-
-    <PlayerCard rank={1} name = "aarav" score={200}/>
-    
+    <div>
+       <Navbar/>
+     <Leaderboard/>
+  
+    </div>
   )
-
+   
 }
