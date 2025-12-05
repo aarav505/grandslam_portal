@@ -1,13 +1,13 @@
 export default function Navbar(){
 
     return(
-        <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-200">
+        <div className="fixed top-0 left-0 w-full z-50 bg-none ">
             <div className="flex py-4 px-6 md:px-12 justify-between items-center max-w-7xl mx-auto w-full">
                 {/* Logo */}
                 <div className="flex items-center gap-3 group cursor-pointer">
                     
                     <div className="flex flex-col">
-                        <h3 className="text-3xl font-medium tracking-tight text-slate-900 leading-none">
+                        <h3 className="text-3xl font-black tracking-tight text-slate-900 leading-none">
                           <a href="/">grand<span className="font-light">slam</span></a>
                             
                         </h3>
