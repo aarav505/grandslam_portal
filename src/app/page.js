@@ -23,11 +23,12 @@ export default function Home() {
         <Navbar/>
       <div className="flex w-full h-full flex-col items-center gap-3 h-full justify-center">
 
-        <h1 className="text-[6.9rem] text-black"> 
+        <h1 className="text-[6.9rem]"> 
           <RollingText 
             text="Everything Sports"
             inView={true}
-            transition={{ duration: 0.6, delay: 0.08, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.08, ease: "easeOut" }
+          }className="font-medium"
           />
         </h1>
 

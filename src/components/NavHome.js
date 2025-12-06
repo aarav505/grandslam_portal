@@ -7,8 +7,8 @@ export default function Navbar(){
                 <div className="flex items-center gap-3 group cursor-pointer">
                     
                     <div className="flex flex-col">
-                        <h3 className="text-3xl font-black tracking-tight text-slate-900 leading-none">
-                          <a href="/">grand<span className="font-light">slam</span></a>
+                        <h3 className="text-3xl  tracking-tight text-slate-900 leading-none">
+                          <a href="/"><span className="font-medium">grand</span><span className="font-light">slam</span></a>
                             
                         </h3>
                         

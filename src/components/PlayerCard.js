@@ -11,7 +11,7 @@ export default function PlayerCard({ rank, name, surname, house }) {
     return (
         <div className="group relative">
             {/* Card */}
-            <div className="relative bg-white border border-slate-100 rounded-2xl overflow-hidden hover:border-slate-200 hover:shadow-md transition-all duration-400 flex h-24 md:h-28">
+            <div className="relative bg-white border border-slate-100 rounded-2xl w-200 overflow-hidden hover:border-slate-200 hover:shadow-md transition-all duration-400 flex h-24 md:h-28">
                 
                 {/* Left Content Section */}
                 <div className="flex-1 flex items-center gap-4 md:gap-5 px-5 md:px-6 py-4 md:py-5 z-10">
