@@ -6,6 +6,7 @@ import { Background } from "@/components/Background";
 import { RollingText } from "@/components/Rolling-Text";
 import CircularText from "@/components/Circular";
 import TypingText from "@/components/Type";
+import { LiquidButton } from '@/components/Button';
 
 
 
@@ -31,17 +32,18 @@ export default function Home() {
           }className="font-medium"
           />
         </h1>
+        
+        <h3 className="text-[1.5rem]"> 
+          <RollingText 
+            text="ALL AT ONCE"
+            inView={true}
+            transition={{ duration: 0.6, delay: 0.08, ease: "easeOut" }
+          }className="font-medium text-gray-500"
+          />
+        </h3>
+       
 
-        <TypingText
-          text={["Stay Updated", "Never Miss An Update", "24 X 7"]}
-          typingSpeed={70}
-          pauseDuration={1500}
-          showCursor={true}
-          cursorCharacter="|"
-          className="text-xl text-gray-800 mt-"
-          textColors={['#06b6d4', '#06b6d4', '#06b6d4']}
-          variableSpeed={{ min: 50, max: 120 }}
-        />
+       
         
         
         
