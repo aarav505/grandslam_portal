@@ -85,8 +85,8 @@ export default async function UpdateArticlePage({ params }) {
           </section>
 
           <footer className="mt-12 pt-6 border-t border-slate-200">
-            <Link href="/updates" className="text-slate-600 hover:text-slate-900 font-medium">
-              ← Back to updates
+            <Link href="/articles" className="text-slate-600 hover:text-slate-900 font-medium">
+              ← Back to all articles
             </Link>
           </footer>
         </article>

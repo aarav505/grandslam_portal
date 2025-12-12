@@ -21,12 +21,12 @@ export default function Navbar(){
                         Rankings
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 group-hover:w-full transition-all duration-300"></span>
                     </a>
-                    <a href="updates" className="text-slate-600 hover:text-slate-900 transition-colors duration-300 relative group">
-                        Updates
+                    <a href="articles" className="text-slate-600 hover:text-slate-900 transition-colors duration-300 relative group">
+                        Articles
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 group-hover:w-full transition-all duration-300"></span>
                     </a>
-                    <a href="schedule" className="text-slate-600 hover:text-slate-900 transition-colors duration-300 relative group">
-                        Schedule
+                    <a href="interhouse" className="text-slate-600 hover:text-slate-900 transition-colors duration-300 relative group">
+                        Inter-House
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-slate-900 group-hover:w-full transition-all duration-300"></span>
                     </a>
                     <a href="https://www.dsfl.app" target="_blank" className="text-slate-600 hover:text-slate-900 transition-colors duration-300 relative group">

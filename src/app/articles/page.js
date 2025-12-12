@@ -14,7 +14,7 @@ const updates = [
     id: 1,
     title: "Season Kickoff — Key Matches Announced",
     date: "Dec 05, 2025",
-    excerpt: "The league opens next week. Fixtures released and star players confirmed.",
+    excerpt: "Ishwar Sandhi.",
     image: "/_F1A2109.jpg",
   },
   {
@@ -43,13 +43,13 @@ export default function Updates() {
         <section className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             <RollingText
-              text="Cricket Season Updates"
+              text="Grandslam Articles"
               inView={true}
               transition={{ duration: 0.6, delay: 0.08, ease: "easeOut" }}
             />
           </h1>
           <p className="mt-4 text-base text-slate-600">
-            Latest news, match reports and player updates — curated and easy to scan.
+            Latest news, match reports and player updates.
           </p>
         </section>
 
@@ -93,7 +93,7 @@ export default function Updates() {
                     <span className="text-xs text-slate-400">• 3 min</span>
                   </div>
 
-                  <Link href={`/updates/${u.id}`} className="inline-block">
+                  <Link href={`/articles/${u.id}`} className="inline-block">
                     <LiquidButton
                       size="sm"
                       className="bg-transparent border border-slate-200 text-slate-900 hover:bg-slate-900 hover:text-white"
