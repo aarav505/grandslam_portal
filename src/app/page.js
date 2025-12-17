@@ -7,7 +7,7 @@ import { RollingText } from "@/components/Rolling-Text";
 import CircularText from "@/components/Circular";
 import TypingText from "@/components/Type";
 import { LiquidButton } from '@/components/Button';
-
+import Credits from '@/components/Credits'
 
 
 
@@ -63,6 +63,7 @@ export default function Home() {
           className="text-primary"
         />
       </div>
+      <Credits></Credits>
     </div>
   )
    
