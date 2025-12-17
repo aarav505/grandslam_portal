@@ -11,38 +11,38 @@ let standings = {
 
     Juniors : [
 
-      { house: 'Hyderabad', played: 10, won: 8, points: 24 },
-      { house: 'Tata', played: 10, won: 6,  points: 18 },
-      { house: 'Kashmir', played: 10, won: 5,  points: 15 },
-      { house: 'Oberoi', played: 10, won: 3,  points: 100 },
-      { house: 'Jaipur', played: 10, won: 3,  points: 9 },
+      { house: 'Hyderabad', played: 4, points: 29 },
+      { house: 'Tata', played: 4,   points: 22 },
+      { house: 'Kashmir', played: 4,  points: 18 },
+      { house: 'Oberoi', played: 4,   points: 12 },
+      { house: 'Jaipur', played: 4,   points: 4 },
     ],
 
     Mediums : [
 
-  { house: 'Hyderabad', played: 11, won: 8, points: 24 },
-  { house: 'Tata', played: 10, won: 6,  points: 18 },
-  { house: 'Kashmir', played: 10, won: 5,  points: 15 },
-  { house: 'Oberoi', played: 10, won: 3,  points: 100 },
-  { house: 'Jaipur', played: 10, won: 3,  points: 9 },
+  { house: 'Hyderabad', played:10,   points: 24},
+  { house: 'Tata', played: 10,  points: 18 },
+  { house: 'Kashmir', played: 10,  points: 15 },
+  { house: 'Oberoi', played: 10,   points: 100 },
+  { house: 'Jaipur', played: 10,    points: 9 },
       ],
 
    Seniors : [
 
-  { house: 'Hyderabad', played: 10, won: 8, points: 24 },
-  { house: 'Tata', played: 10, won: 6,  points: 18 },
-  { house: 'Kashmir', played: 10, won: 5,  points: 15 },
-  { house: 'Oberoi', played: 10, won: 3,  points: 100 },
-  { house: 'Jaipur', played: 10, won: 3,  points: 9 },
+  { house: 'Hyderabad', played: 10,   points: 24 },
+  { house: 'Tata', played: 10,    points: 18 },
+  { house: 'Kashmir', played: 10,   points: 15 },
+  { house: 'Oberoi', played: 10,    points: 100 },
+  { house: 'Jaipur', played: 10,   points: 9 },
   ],
 
 House : [
 
-  { house: 'Hyderabad', played: 10, won: 8, points: 24 },
-  { house: 'Tata', played: 10, won: 6,  points: 18 },
-  { house: 'Kashmir', played: 10, won: 5,  points: 15 },
-  { house: 'Oberoi', played: 10, won: 3,  points: 100 },
-  { house: 'Jaipur', played: 10, won: 3,  points: 9 },
+  { house: 'Hyderabad', played: 10, points: 24 },
+  { house: 'Tata', played: 10,   points: 18 },
+  { house: 'Kashmir', played: 10,    points: 15 },
+  { house: 'Oberoi', played: 10,    points: 100 },
+  { house: 'Jaipur', played: 10,    points: 9 },
   ]
 }
 
@@ -63,8 +63,8 @@ let playerStats = {
 
 let matches = [
   { date: '2025-12-01', teams: 'Hyderabad vs Tata', score: '150/8 - 148/9', result: 'Hyderabad won by 2 runs' },
-  { date: '2025-11-28', teams: 'Mumbai vs Pune', score: '120/10 - 121/6', result: 'Pune won by 4 wickets' },
-  { date: '2025-11-20', teams: 'Hyderabad vs Mumbai', score: '200/5 - 198/7', result: 'Hyderabad won by 2 runs' },
+  { date: '2025-11-28', teams: 'Kashmir vs Oberoi', score: '120/10 - 121/6', result: 'Oberoi won by 4 wickets' },
+  { date: '2025-11-20', teams: 'Hyderabad vs Jaipur', score: '200/5 - 198/7', result: 'Hyderabad won by 2 runs' },
 ]
 
 export default function Interhouse() {
@@ -104,7 +104,7 @@ export default function Interhouse() {
     Jaipur: '#16a34a', // green
     Tata: '#ef4444', // red
     Oberoi: '#60a5fa', // light blue
-    Kashmir: '#f59e0b' // yellow
+    Kashmir: '#FFF000' // yellow
   };
 
   // Simple CountUp component for animated counters
@@ -136,24 +136,23 @@ export default function Interhouse() {
         <div className="w-full max-w-6xl px-6 relative z-100">
           <Navbar />
 
-          <h1 className="text-4xl font-extrabold text-black mt-8 mb-6">Interhouse — Overview</h1>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6" style={{ gridAutoRows: 'minmax(120px, auto)' }}>
+          
+          <div className="bg-white/40 backdrop-blur-xl grid grid-cols-1 lg:grid-cols-3 gap-6" style={{ gridAutoRows: 'minmax(120px, auto)' }}>
             {/* House Standings (tall card on large screens) */}
-            <section className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow lg:row-span-2 hover:-translate-y-1 hover:shadow-lg transition-transform">
-              <h2 className="text-xl font-bold mb-4">House Standings</h2>
+            <section className=" dark:bg-slate-800 flex-col items-center justify-center rounded-3xl p-6 shadow lg:row-span-2 hover:-translate-y-1 hover:shadow-lg transition-transform">
+              <h2 className="text-3xl flex  justify-center font- mb-4">House Standings</h2>
 
               {/* category tabs */}
-              <div className="flex gap-2">
+              <div className="flex gap-0.5">
                 {categories.map((c) => (
                   <button
                     key={c}
                     type="button"
                     onClick={() => setCategory(c)}
-                    className={`px-3 py-1 rounded-md text-sm font-semibold transition ${
+                    className={`px-3  py-1 rounded-full text-sm font-semibold transition ${
                       category === c
                         ? 'bg-slate-900 text-white'
-                        : 'bg-slate-100 text-slate-700'
+                        : 'bg- text-slate-700'
                     }`}
                   >
                     {c}
@@ -161,7 +160,7 @@ export default function Interhouse() {
                 ))}
               </div>
 
-              <div className="space-y-3 ">
+              <div className="space-y-3 mt-5 ">
                 {sortedStandings.map((s, idx) => {
                   const color = houseColors[s.house] || '#94a3b8';
                   const pct = Math.round((s.points / Math.max(maxPoints, 1)) * 100);
@@ -169,12 +168,10 @@ export default function Interhouse() {
                   return (
                   <div key={s.house} className="flex items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center font-bold" style={{ background: color, color: '#fff' }}>
-                        {initials}
-                      </div>
+             
                       <div>
                         <div className="font-semibold">{s.house}</div>
-                        <div className="text-sm text-slate-500">Played {s.played} — Won {s.won}</div>
+                        <div className="text-sm text-slate-500">Played {s.played} </div>
                         <div className="mt-2 w-48 h-2 bg-slate-200 dark:bg-slate-700 rounded overflow-hidden">
                           <div className="h-full rounded" style={{ width: `${pct}%`, background: color, transition: 'width 700ms ease' }} />
                         </div>
@@ -189,41 +186,31 @@ export default function Interhouse() {
               </div>
             </section>
 
-            {/* Player Stats (mini bento cards) */}
-            <section className="bg-white dark:bg-slate-800 rounded-lg p-4 shadow hover:-translate-y-1 hover:shadow-lg transition-transform">
-              <h2 className="text-xl font-bold mb-4">Top Player Stats</h2>
-              <div className="grid grid-cols-1 gap-4">
-                <div className="bg-slate-50 dark:bg-slate-700 rounded p-3">
-                  <h3 className="text-sm font-semibold text-slate-600 mb-2">Most Runs</h3>
-                  <div className="space-y-2">
-                    {playerStats.batting.map((p) => (
+            {/* Player Stats (minimalist) */}
+            <section className="bg-white/40 backdrop-blur-xl dark:bg-slate-800 rounded-3xl p-6 shadow hover:-translate-y-1 hover:shadow-lg transition-transform">
+              <h2 className="text-3xl font flex justify-center mb-5 text-slate-900 dark:text-slate-100">Player Stats</h2>
+              <div className="space-y-7">
+                {/* Most Runs */}
+                <div className="border-">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-3">Runs</h3>
+                  <div className="space-y-.5 ">
+                    {playerStats.batting.slice(0, 3).map((p) => (
                       <div key={p.name} className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-white dark:bg-slate-800 rounded flex items-center justify-center font-medium">R</div>
-                          <div>
-                            <div className="font-medium">{p.name}</div>
-                            <div className="text-xs text-slate-500">Runs</div>
-                          </div>
-                        </div>
-                        <div className="font-bold">{p.runs}</div>
+                        <div className="text-l font-medium text-slate-800 dark:text-slate-200 ">{p.name}</div>
+                        <div className="text-sm font-bold text-slate-900 dark:text-white"><CountUp end={p.runs} duration={600} /></div>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="bg-slate-50 dark:bg-slate-700 rounded p-3">
-                  <h3 className="text-sm font-semibold text-slate-600 mb-2">Most Wickets</h3>
-                  <div className="space-y-2">
-                    {playerStats.bowling.map((p) => (
+                {/* Most Wickets */}
+                <div>
+                  <h3 className="text-sm font-bold  uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-3">Wickets</h3>
+                  <div className="space-y-.5">
+                    {playerStats.bowling.slice(0, 3).map((p) => (
                       <div key={p.name} className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-white dark:bg-slate-800 rounded flex items-center justify-center font-medium">W</div>
-                          <div>
-                            <div className="font-medium">{p.name}</div>
-                            <div className="text-xs text-slate-500">Wickets</div>
-                          </div>
-                        </div>
-                        <div className="font-bold">{p.wickets}</div>
+                        <div className="text-l font-medium text-slate-800 dark:text-slate-200 truncate">{p.name}</div>
+                        <div className="text-sm font-bold text-slate-900 dark:text-white"><CountUp end={p.wickets} duration={600} /></div>
                       </div>
                     ))}
                   </div>
@@ -231,26 +218,70 @@ export default function Interhouse() {
               </div>
             </section>
 
-            {/* Match Results */}
-            <section className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow hover:-translate-y-1 hover:shadow-lg transition-transform">
-              <h2 className="text-xl font-bold mb-4">Recent Match Results</h2>
-              <div className="space-y-4">
-                {matches.map((m) => (
-                  <div key={m.date} className="p-3 rounded border border-slate-100 dark:border-slate-700">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="font-semibold">{m.teams}</div>
-                        <div className="text-xs text-slate-500">{m.date}</div>
-                      </div>
-                      <div className="text-right">
-                        <div className="font-medium">{m.score}</div>
-                        <div className="text-sm text-slate-600">{m.result}</div>
+            {/* Match Results - Glassmorphism */}
+            <section className="bg-white/40 backdrop-blur-xl dark:bg-slate-900/40  rounded-3xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-2xl transition-all border border-white/60 dark:border-slate-700/60">
+              <h2 className="text-3xl font mb-5 text-slate-900 flex justify-center dark:text-slate-100">Recent Matches</h2>
+              <div className="space-y-3">
+                {matches.map((m) => {
+                  const isWon = m.result.toLowerCase().includes('won');
+                  return (
+                    <div key={m.date} className="group relative overflow-hidden rounded-xl">
+                      {/* Gradient background */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      
+                      {/* Content */}
+                      <div className="relative bg-white/50 dark:bg-slate-800/50 backdrop-blur-md border border-white/40 dark:border-slate-700/40 p-4 rounded-xl hover:bg-white/70 dark:hover:bg-slate-800/70 transition-all">
+                        <div className="flex items-center justify-between gap-4">
+                          {/* Teams & Date */}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1">
+
+                              <div className="font-bold text-slate-900 dark:text-slate-100 text-sm ">{m.teams}</div>
+                            </div>
+
+                          </div>
+
+                          {/* Score Badge */}
+                          <div className="flex flex-col items-end gap-1">
+                            <div className="px-3 py-1.5 bg-slate-900/10 dark:bg-slate-100/10 backdrop-blur-sm rounded-lg font-mono text-xs font-bold text-slate-900 dark:text-slate-100">
+                              {m.score}
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Result */}
+                        <div className="mt-2 text-xs font-medium text-slate-700 dark:text-slate-300 flex items-center gap-2">
+                          <span className={`inline-block px-2 py-0.5 rounded-full text-white text-xs font-semibold ${isWon ? 'bg-green-500/80' : 'bg-orange-500/80'}`}>
+                            {'✓ '}
+                          </span>
+                          <span className="text-slate-600 dark:text-slate-400">{m.result}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </section>
+
+            <div className="bg-white/40 backdrop-blur-xl dark:bg-slate-900/40 rounded-3xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-2xl transition-all border border-white/60 dark:border-slate-700/60">
+                
+                <h1 className="text-xl flex justify-center mb-4">Highest Score</h1>
+                <div className="flex gap-40">
+                   <p className="font-medium text-gray-600">Aarav Anand</p>
+                   <p className="font-bold">100*</p>
+                </div>
+               
+
+            </div>
+            <div className="bbg-white/40 backdrop-blur-xl dark:bg-slate-900/40  rounded-3xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-2xl transition-all border border-white/60 dark:border-slate-700/60 ">
+
+            <h1 className="text-xl flex justify-center mb-4">Best Bowling Figure</h1>
+                <div className="flex gap-40">
+                   <p className="font-medium text-gray-600">Aarav Anand</p>
+                   <p className="font-bold">5/12</p>
+                </div>
+
+            </div>
           </div>
         </div>
       </Background>
