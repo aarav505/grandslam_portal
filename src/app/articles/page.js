@@ -107,18 +107,6 @@ export default function Updates() {
           ))}
         </section>
 
-        {/* large hero image / gallery */}
-        <section className="mt-12">
-          <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
-            <Image
-              src="/_F1A2109.jpg"
-              alt="Season highlights"
-              width={1600}
-              height={480}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </section>
       </main>
     </Background>
   )
