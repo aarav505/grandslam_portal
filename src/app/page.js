@@ -63,7 +63,7 @@ export default function Home() {
           className="text-primary"
         />
       </div>
-      <Credits></Credits>
+    
     </div>
   )
    

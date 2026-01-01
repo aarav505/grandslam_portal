@@ -23,6 +23,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+       
+      <footer className="fixed bottom-0 left-0 w-full text-center text-m text-gray-500 py-2 bg-none border-t">
+  Built by <span className="text-blue-500">Aarav Anand</span>
+</footer>
+
+        
       </body>
     </html>
   );
