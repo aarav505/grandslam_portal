@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -9,31 +10,40 @@ export default function Leaderboard(){
     const [sports, setSports] = useState("Badminton")
   
     const students = {
-      Badminton: [
-        { rank: 1, name: "Aarav", surname: "Anand", house: "Hyderabad" },
-        { rank: 2, name: "Maya", surname: "Singh", house: "Tata" },
-        { rank: 3, name: "Aarav", surname: "Anand", house: "Hyderabad" },
-        { rank: 4, name: "Aarav", surname: "Anand", house: "Hyderabad" },
-        { rank: 5, name: "Aarav", surname: "Anand", house: "Hyderabad" },
-        { rank: 6, name: "Aarav", surname: "Anand", house: "Hyderabad" },
-        { rank: 7, name: "Aarav", surname: "Anand", house: "Hyderabad" },
-      ],
-      Squash: [
-        { rank: 1, name: "Liam", surname: "Patel", house: "Mumbai" }
-      ],
-      Tennis: [
-        { rank: 1, name: "Aarav", surname: "Anand", house: "Hyderabad" }
-      ],
-      "Table Tennis": [
-        { rank: 1, name: "Jogn", surname: "Anand", house: "Hyderabad" }
-      ]
-    }
-
-   
+  Badminton: [
+    { rank: 1, name: "Kaushal", surname: "Golyan", house: "Jaipur", img: "/kaushal.avif" },
+    { rank: 2, name: "Vihaan", surname: "Jhunjhunwala", house: "Hyderabad", img: "/vihaan.avif" },
+    { rank: 3, name: "Hriday", surname: "Kanodia", house: "Kashmir", img: "/hriday.avif" },
+    { rank: 4, name: "Vedant", surname: "Bajaj", house: "Jaipur", img: "/vedant.avif" },
+    { rank: 5, name: "Abir", surname: "Garg", house: "Oberoi", img: "/abir.avif" },
+  ],
+  Squash: [
+    { rank: 1, name: "Zorawar", surname: "Sandhu", house: "Hyderabad", img: "/zorawar.avif" },
+    { rank: 2, name: "Yohaan", surname: "Marda", house: "Tata", img: "/yohaan.avif" },
+    { rank: 3, name: "Vir", surname: "Sandhu", house: "Jaipur", img: "/vir-j.avif" },
+    { rank: 4, name: "Jansher", surname: "Grewal", house: "Tata", img: "/jansher.avif" },
+    { rank: 5, name: "Vir", surname: "Sandhu", house: "Hyderabad", img: "/vir-h.avif" },
+  ],
+  Tennis: [
+    { rank: 1, name: "Hrishikesh", surname: "Aiyer", house: "Hyderabad", img: "/hrishikesh.avif" },
+    { rank: 2, name: "Viraj", surname: "Singh", house: "Kashmir", img: "/viraj.avif" },
+    { rank: 3, name: "Zohair", surname: "Masood", house: "Jaipur", img: "/zohair.avif" },
+    { rank: 4, name: "Raghav", surname: "Walia", house: "Oberoi", img: "/raghav.avif" },
+    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Mumbai", img: "/saharsh.avif" },
+  ],
+  "Table Tennis": [
+    { rank: 1, name: "Aarav", surname: "Dadu", house: "Hyderabad", img: "/aarav-dadu.avif" },
+    { rank: 2, name: "Krishnav", surname: "Gupta", house: "Jaipur", img: "/krishnav.avif" },
+    { rank: 3, name: "Yug", surname: "Agnihotri", house: "Mumbai", img: "/yug.avif" },
+    { rank: 4, name: "Abheer", surname: "Baceher", house: "Kashmir", img: "/abheer.avif" },
+    { rank: 5, name: "Shaurya", surname: "Surana", house: "Tata", img: "/shaurya.avif" },
+  ]
+}
 
     const sportsList = ["Badminton", "Squash", "Table Tennis", "Tennis"]
   
-    const list = "students" ? students : masters
+    // Logic to handle potential "masters" list if added later
+    const list = category === "students" ? students : {} 
     const filteredList = list[sports] || []
   
     return (
@@ -46,8 +56,6 @@ export default function Leaderboard(){
               Rankings
             </h1>
           </div>
-
-   
 
           {/* Sports Filter */}
           <div className="mb-8">
@@ -71,7 +79,7 @@ export default function Leaderboard(){
           </div>
 
           {/* Scrollable Leaderboard Container */}
-          <div className=" rounded-2xl  w-220 p-6 h-130 overflow-y-auto ">
+          <div className=" rounded-2xl w-220 p-6 h-130 overflow-y-auto ">
             <div className="space-y-3">
               {filteredList.length > 0 ? (
                 filteredList.map((p, idx) => (
@@ -81,6 +89,7 @@ export default function Leaderboard(){
                       name={p.name}
                       surname={p.surname}
                       house={category == "students" ? p.house : p.dept}
+                      img={p.img} // Passing the unique image path here
                     />
                   </div>
                 ))

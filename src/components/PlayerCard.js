@@ -1,4 +1,4 @@
-export default function PlayerCard({ rank, name, surname, house }) {
+export default function PlayerCard({ rank, name, surname, house, img }) {
     const getMedalColor = (rank) => {
         switch(rank) {
             case 1: return "bg-amber-400"
@@ -42,13 +42,11 @@ export default function PlayerCard({ rank, name, surname, house }) {
                 {/* Right Image Section - Full Height */}
                 <div className="flex-shrink-0 w-24 md:w-28 h-full rounded-r-2xl overflow-hidden">
                     <img 
-                        src="/test.avif" 
+                        src={img || "/fallback-avatar.png"} // Unique image per card
                         alt={`${name} ${surname}`}
                         className="w-full h-full object-cover"
                     />
                 </div>
-
-            
             </div>
         </div>
     );
