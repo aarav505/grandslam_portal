@@ -12,24 +12,24 @@ import { LiquidButton } from "@/components/Button"
 const updates = [
   {
     id: 1,
-    title: "Season Kickoff — Key Matches Announced",
+    title: "The Grandslam",
     date: "Dec 05, 2025",
-    excerpt: "Ishwar Sandhi.",
-    image: "/_F1A2109.jpg",
+    excerpt: "Ayaan Adeeb",
+    image: "/articles/jaipur.jpg",
   },
   {
-    id: 2,
-    title: "Player Spotlight — Aarav Anand",
+    id:2,
+    title: "Beyong Two Wheels and a Carbon Skeleton",
     date: "Dec 03, 2025",
-    excerpt: "Aarav returns this season with improved form.",
-    image: "/_F1A1957.jpg",
+    excerpt: "Loechin Phangcho",
+    image: "/articles/cycling.jpg",
   },
   {
     id: 3,
-    title: "Injury Report & Recovery Timelines",
+    title: "FIFA WORLD CUP - 2026",
     date: "Dec 01, 2025",
-    excerpt: "Latest medical updates on players and expected return dates.",
-    image: "/_F1A1708.jpg",
+    excerpt: "Ranveer Tomar",
+    image: "/articles/world.jpg",
   },
 ]
 
