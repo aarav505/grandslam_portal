@@ -25,18 +25,18 @@ export default function Leaderboard(){
     { rank: 5, name: "Vir", surname: "Sandhu", house: "Hyderabad", img: "/vir-h.avif" },
   ],
   Tennis: [
-    { rank: 1, name: "Hrishikesh", surname: "Aiyer", house: "Hyderabad", img: "/hrishikesh.avif" },
-    { rank: 2, name: "Viraj", surname: "Singh", house: "Kashmir", img: "/viraj.avif" },
-    { rank: 3, name: "Zohair", surname: "Masood", house: "Jaipur", img: "/zohair.avif" },
+    { rank: 1, name: "Hrishikesh", surname: "Aiyer", house: "Oberoi", img: "/hrishikesh.avif" },
+    { rank: 2, name: "Viraj", surname: "Singh", house: "Jaipur", img: "/viraj.avif" },
+    { rank: 3, name: "Zohair", surname: "Masood", house: "", img: "/zohair.avif" },
     { rank: 4, name: "Raghav", surname: "Walia", house: "Oberoi", img: "/raghav.avif" },
-    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Mumbai", img: "/saharsh.avif" },
+    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Tata", img: "/saharsh.avif" },
   ],
   "Table Tennis": [
-    { rank: 1, name: "Aarav", surname: "Dadu", house: "Hyderabad", img: "/aarav-dadu.avif" },
+    { rank: 1, name: "Aarav", surname: "Dadu", house: "Tata", img: "/aarav-dadu.avif" },
     { rank: 2, name: "Krishnav", surname: "Gupta", house: "Jaipur", img: "/krishnav.avif" },
     { rank: 3, name: "Yug", surname: "Agnihotri", house: "Mumbai", img: "/yug.avif" },
-    { rank: 4, name: "Abheer", surname: "Baceher", house: "Kashmir", img: "/abheer.avif" },
-    { rank: 5, name: "Shaurya", surname: "Surana", house: "Tata", img: "/shaurya.avif" },
+    { rank: 4, name: "Abheer", surname: "Baccher", house: "Kashmir", img: "/abheer.avif" },
+    { rank: 5, name: "Shaurya", surname: "Surana", house: "Oberoi", img: "/shaurya.avif" },
   ]
 }
 
