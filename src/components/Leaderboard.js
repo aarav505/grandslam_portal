@@ -18,7 +18,7 @@ export default function Leaderboard(){
     { rank: 5, name: "Abir", surname: "Garg", house: "Oberoi", img: "/abir.JPG" },
   ],
   Squash: [
-    { rank: 1, name: "Zorawar", surname: "Sandhu", house: "Hyderabad", img: "/blank.avif" },
+    { rank: 1, name: "Zorawar", surname: "Sandhu", house: "Jaipur", img: "/blank.avif" },
     { rank: 2, name: "Yohaan", surname: "Marda", house: "Tata", img: "/blank.avif" },
     { rank: 3, name: "Vir", surname: "Sandhu", house: "Jaipur", img: "/blank.avif" },
     { rank: 4, name: "Jansher", surname: "Grewal", house: "Tata", img: "/blank.avif" },
