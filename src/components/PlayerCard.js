@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function PlayerCard({ rank, name, surname, house, img }) {
     const getMedalColor = (rank) => {
         switch(rank) {
@@ -40,11 +42,13 @@ export default function PlayerCard({ rank, name, surname, house, img }) {
                 </div>
 
                 {/* Right Image Section - Full Height */}
-                <div className="flex-shrink-0 w-24 md:w-28 h-full rounded-r-2xl overflow-hidden">
-                    <img 
-                        src={img || "/fallback-avatar.png"} // Unique image per card
+                <div className="relative flex-shrink-0 w-24 md:w-28 h-full rounded-r-2xl overflow-hidden">
+                    <Image 
+                        src={img || "/fallback-avatar.png"}
                         alt={`${name} ${surname}`}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 96px, 112px"
                     />
                 </div>
             </div>

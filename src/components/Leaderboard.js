@@ -29,14 +29,14 @@ export default function Leaderboard(){
     { rank: 2, name: "Viraj", surname: "Singh", house: "Jaipur", img: "/viraj.jpg" },
     { rank: 3, name: "Zohair", surname: "Masood", house: "Kashmir", img: "/blank.avif" },
     { rank: 4, name: "Raghav", surname: "Walia", house: "Jaipur", img: "/blank.avif" },
-    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Tata", img: "/saharsh.avif" },
+    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Tata", img: "/saha.jpg" },
   ],
   "Table Tennis": [
-    { rank: 1, name: "Aarav", surname: "Dadu", house: "Tata", img: "/aarav-dadu.avif" },
+    { rank: 1, name: "Aarav", surname: "Dadu", house: "Tata", img: "/dadu.jpg" },
     { rank: 2, name: "Krishnav", surname: "Gupta", house: "Jaipur", img: "/krish.jpg" },
     { rank: 3, name: "Yug", surname: "Agnihotri", house: "Tata", img: "/blank.avif" },
-    { rank: 4, name: "Abheer", surname: "Baccher", house: "Kashmir", img: "/abheer.avif" },
-    { rank: 5, name: "Shaurya", surname: "Surana", house: "Oberoi", img: "/shaurya.avif" },
+    { rank: 4, name: "Abheer", surname: "Baccher", house: "Kashmir", img: "/blank.avif" },
+    { rank: 5, name: "Shaurya", surname: "Surana", house: "Oberoi", img: "/blank.avif" },
   ]
 }
 
