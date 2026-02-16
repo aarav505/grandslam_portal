@@ -22,10 +22,10 @@ let playerStats = {
 let matches = [
   {
 
-    result: "L1 Kashmir House won by 4 wickets"
+    result: "L2 Kashmir House won by 4 wickets"
   },
   {
-    result: "L1 Jaipur house won by 167 runs"
+    result: "L2 Jaipur house won by 167 runs"
   },
   {
     result: "J1 Hyderabad house won by 78 runs"
