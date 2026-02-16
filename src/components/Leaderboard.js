@@ -29,7 +29,7 @@ export default function Leaderboard(){
     { rank: 2, name: "Viraj", surname: "Singh", house: "Jaipur", img: "/viraj.JPG" },
     { rank: 3, name: "Zohair", surname: "Masood", house: "Kashmir", img: "/blank.avif" },
     { rank: 4, name: "Raghav", surname: "Walia", house: "Jaipur", img: "/blank.avif" },
-    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Tata", img: "/saha.JPG" },
+    { rank: 5, name: "Saharsh", surname: "Khetan", house: "Jaipur", img: "/saha.JPG" },
   ],
   "Table Tennis": [
     { rank: 1, name: "Aarav", surname: "Dadu", house: "Tata", img: "/dadu.JPG" },
