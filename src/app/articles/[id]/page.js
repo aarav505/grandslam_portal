@@ -14,7 +14,7 @@ const updates = [
   },
   {
     id: 2,
-    title: "Beyong Two Wheels and a Carbon Skeleton",
+    title: "Beyond Two Wheels and a Carbon Skeleton",
     date: "Dec 03, 2025",
     excerpt: "Loechin Phangcho",
     image: "/articles/cycling.jpg",
