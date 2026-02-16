@@ -21,13 +21,22 @@ let playerStats = {
 
 let matches = [
   {
+    date: "16 Feb 2026",
+    teams: "Kashmir vs Hyderabad",
+    score: "95/10 - 96/6",
 
     result: "L2 Kashmir House won by 4 wickets"
   },
   {
+    date: "16 Feb 2026",
+    teams: "Jaipur vs Oberoi",
+    score: "203/7 - 38/10",
     result: "L2 Jaipur house won by 167 runs"
   },
   {
+    date: "16 Feb 2026",
+    teams: "Kashmir vs Hyderabad",
+    score: "103/10 - 181/7",
     result: "J1 Hyderabad house won by 78 runs"
   }
 ];
