@@ -265,7 +265,7 @@ export default function Interhouse() {
                       </div>
                       <div className="text-right">
                         <div className="font-bold text-lg"><CountUp end={s.points} duration={700} /></div>
-                        <div className="text-xs text-slate-400">{pct}%</div>
+                        <div className="text-xs text-slate-400"></div>
                       </div>
                     </div>
                   )})
