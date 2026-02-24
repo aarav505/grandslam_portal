@@ -21,23 +21,23 @@ let playerStats = {
 
 let matches = [
   {
-    date: "19 Feb 2026",
-    teams: "Jaipur vs Oberoi",
-    score: "79/10 - 71/9",
+    date: "24 Feb 2026",
+    teams: "Tata vs Hyderabad",
+    score: "183/6 - 145/7",
 
-    result: "L1 Jaipur House won by 8 Runs"
+    result: "L1 Tata House won by 38 Runs"
   },
   {
     date: "19 Feb 2026",
-    teams: "Hyderabad vs Kashmir",
-    score: "132/10 - 82/10",
-    result: "L1 Hyderabad house won by 50 Runs"
+    teams: "Jaipur vs Kashmir",
+    score: "60/10 - 63/9",
+    result: "L1 Kashmir house won by 1 Wicket"
   },
   {
     date: "19 Feb 2026",
-    teams: "Oberoi vs Hyderabad",
-    score: "125/5 - 126/2",
-    result: "J1 Hyderabad house won by 8 Wickets"
+    teams: "Tata vs Jaipur",
+    score: "70/10 - 71/0",
+    result: "J1 Jaipur house won by 10 Wickets"
   }
 ];
 
