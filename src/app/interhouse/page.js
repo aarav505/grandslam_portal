@@ -12,16 +12,16 @@ const BOWLING_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSSXYo5UYCk
 
 let matches = [
   {
-    date: "25 Mar 2026",
-    teams: "Kashmir vs Oberoi",
-    score: "172/7 - 80/10",
-    result: "H1 Kashmir House won by 9 Wickets"
+    date: "26 Mar 2026",
+    teams: "Tata vs Oberoi",
+    score: "119/5 - 124/10",
+    result: "H1 Oberoi House won by 5 Runs"
   },
   {
     date: "25 Mar 2026",
-    teams: "Jaipur vs Tata",
-    score: "95/10 - 40/10",
-    result: "H1 Jaipur house won by 56 Runs"
+    teams: "Kashmir vs Hyderabad",
+    score: "71/10 - 72/3",
+    result: "H1 Hyderabad house won by 7 Wickets"
   },
 ];
 
